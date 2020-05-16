@@ -1,0 +1,40 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "python run",
+        "type": "shell",
+        "command": "python3  \"${file}\"",
+        "presentation": {
+          "focus": true,
+          "echo": false,
+          "showReuseMessage": true
+        },
+        "args": [],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": []
+      },
+      {
+        "label": "build-run-cpp",
+        "command": "g++  cpp_codes/\"${fileBasename}\" && ./a.out",
+        "args": [
+          
+        ],
+        "type": "shell",
+        "presentation": {
+          "focus": true,
+          "echo": false,
+          "showReuseMessage": true
+        },
+        "group": {
+          "kind": "test",
+          "isDefault": true
+        },
+        "problemMatcher": []
+      }
+    ]
+    
+} 
