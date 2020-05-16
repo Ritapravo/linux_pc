@@ -25,3 +25,5 @@ if __name__ =="__main__":
     graph = [[1,2,3],[3],[0,1],[]]
     ans  = path(graph, 2,3)
     print(ans)
+
+#git add . && git commit -m "py" && git push origin master
